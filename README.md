@@ -1,11 +1,11 @@
-# Telegraph
-A collection of log configuratoins for telegraph to import to influx, zinc etc.
+# Telegraf
+A collection of log configuratoins for telegraf to import to influx, zinc etc.
 
 Nginx log format for reading Chef infra nginx logs.  This example reads the logs with a given grok pattern and allows you to extract the http_x_ops_userid  (node_name from client.rb) and the https status code.  The output is currently into a file for future processing and in this example it is use to find all node_names where the status = 401(actually it outputs all status codes, but a simple cat outputfile.csv | grep "401" should pull out only the 401 status items).  Using this to track down particular node names which have issues authenticating to chef infra server. 
 
 # installation 
 
-Install the telegraph client in your host OS, instructions for such can be found from the [influx website](https://docs.influxdata.com/telegraf/v1.21/introduction/installation/)
+Install the telegraf client in your host OS, instructions for such can be found from the [influx website](https://docs.influxdata.com/telegraf/v1.21/introduction/installation/)
 
 ## Pre-requisitess
 
@@ -19,7 +19,7 @@ some logs with the following format (if you have installed chef infra server you
 # Testing
 
 # usage for this example
-copy the nginx.conf file into your config directory for telegraph in this case /etc/telegraf/telegraf.d/nginx.conf
+copy the nginx.conf file into your config directory for telegraf in this case /etc/telegraf/telegraf.d/nginx.conf
 now test if that file is operational
 
 ```
