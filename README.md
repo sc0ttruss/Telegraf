@@ -30,3 +30,10 @@ telegraf -config /etc/telegraf/telegraf.d/nginx.conf -test --debug
 ```
 telegraf -config /etc/telegraf/telegraf.d/nginx.conf
 ```
+
+Output
+will output to stdout(ie the screen) and to the file below.
+feel free to remove stdout in the nginx.conf above
+```
+/tmp/nginxlogs.out
+```
