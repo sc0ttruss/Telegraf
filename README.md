@@ -37,3 +37,9 @@ feel free to remove stdout in the nginx.conf above
 ```
 /tmp/nginxlogs.out
 ```
+# Useful links used to create this code
+[output data formats](https://github.com/influxdata/telegraf/blob/master/docs/DATA_FORMATS_OUTPUT.md)
+[Nginx monitoring using Telegraf/Prometheus/Grafana](https://blog.opstree.com/2021/11/09/nginx-monitoring-using-telegraf-prometheus-grafana/)
+[grok patterns](https://github.com/elastic/elasticsearch/blob/7.8/libs/grok/src/main/resources/patterns/grok-patterns)
+[Grok Pattern Examples for Log Parsing](https://logz.io/blog/grok-pattern-examples-for-log-parsing/)
+
